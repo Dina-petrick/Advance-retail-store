@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeStore - Premium Retail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+ 
+
+    <script fcm_service_path="/firebase-messaging-sw.js" src="https://sdk.resul.team/handlers/2f533ec9fd6348ae874877a03f155409.sdk" defer="defer"></script>
+</script>
+ 
+</head>
+
+<body>
+  
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Luxe<span>Store</span>.</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="collections.html">Collections</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-actions">
+                <a href="cart.html" class="btn btn-secondary" style="padding: 0.5rem 1rem;">Cart (0)</a>
+                <a href="login.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Elevate Your Style</h1>
+            <p>Discover the latest trends in premium fashion and accessories. Curated for the modern individual.</p>
+            <a href="shop.html" class="btn btn-primary" style="background-color: #f59e0b; color: #0f172a;">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Featured Categories -->
+    <section class="section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+                <p>Explore our wide range of premium products</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="card" style="text-align: center; padding: 2rem;">
+                    <h3 style="margin-bottom: 0;">Electronics</h3>
+                </div>
+                <div class="card" style="text-align: center; padding: 2rem;">
+                    <h3 style="margin-bottom: 0;">Fashion</h3>
+                </div>
+                <div class="card" style="text-align: center; padding: 2rem;">
+                    <h3 style="margin-bottom: 0;">Home</h3>
+                </div>
+                <div class="card" style="text-align: center; padding: 2rem;">
+                    <h3 style="margin-bottom: 0;">Beauty</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section" style="background-color: #f1f5f9;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+            <div class="section-header">
+                <h2>Trending Products</h2>
+                <p>Hand-picked items just for you</p>
+            </div>
+
+            <div class="grid-4">
+                <!-- Product 1 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Product" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Premium Watch</h3>
+                        <div class="card-price">$299.00</div>
+                        <a href="product.html" class="btn btn-secondary btn-block">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Product" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Wireless Headphones</h3>
+                        <div class="card-price">$199.00</div>
+                        <a href="product.html" class="btn btn-secondary btn-block">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Product" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Running Shoes</h3>
+                        <div class="card-price">$129.00</div>
+                        <a href="product.html" class="btn btn-secondary btn-block">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Product" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Designer Bag</h3>
+                        <div class="card-price">$499.00</div>
+                        <a href="product.html" class="btn btn-secondary btn-block">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h4>LuxeStore</h4>
+                <p style="color: #94a3b8;">Premium retail experience for the modern shopper.</p>
+            </div>
+            <div>
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 LuxeStore. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+</html>

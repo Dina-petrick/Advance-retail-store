@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Watch - LuxeStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+ 
+    <script fcm_service_path="/firebase-messaging-sw.js" src="https://sdk.resul.team/handlers/2f533ec9fd6348ae874877a03f155409.sdk" defer="defer"></script>
+</head>
+
+<body>
+  
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Luxe<span>Store</span>.</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="collections.html">Collections</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-actions">
+                <a href="cart.html" class="btn btn-secondary" style="padding: 0.5rem 1rem;">Cart (0)</a>
+                <a href="login.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <div class="product-details">
+        <div class="container">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Product" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="product-info">
+                <div
+                    style="text-transform: uppercase; color: #64748b; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">
+                    Electronics</div>
+                <h1>Premium Watch</h1>
+                <div class="price">$299.00</div>
+                <p class="description">
+                    Experience the perfect blend of style and functionality with our Premium Watch. Crafted with
+                    precision materials and designed for the modern lifestyle, this timepiece features a durable strap,
+                    water resistance, and a sleek minimalist face. Whether you're at a business meeting or a casual
+                    outing, this watch elevates your look effortlessly.
+                </p>
+
+                <div style="margin-bottom: 2rem;">
+                    <label style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Quantity</label>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button
+                            style="padding: 0.5rem 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;">-</button>
+                        <input type="text" value="1"
+                            style="width: 50px; text-align: center; border: 1px solid #e2e8f0; border-radius: 0.5rem;">
+                        <button
+                            style="padding: 0.5rem 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;">+</button>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-block add-to-cart" style="max-width: 300px;">Add to Cart</button>
+
+                <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+                    <div style="display: flex; gap: 2rem;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 0.25rem;">Free Shipping</div>
+                            <div style="font-size: 0.9rem; color: #64748b;">On orders over $100</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 0.25rem;">Returns</div>
+                            <div style="font-size: 0.9rem; color: #64748b;">30 day easy returns</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <section class="section" style="background-color: #f8fafc;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+            <div class="section-header">
+                <h2>You May Also Like</h2>
+            </div>
+
+            <div class="grid-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Product" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Wireless Headphones</h3>
+                        <div class="card-price">$199.00</div>
+                        <a href="product.html" class="btn btn-secondary btn-block">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Product" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Sunglasses</h3>
+                        <div class="card-price">$159.00</div>
+                        <a href="product.html" class="btn btn-secondary btn-block">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h4>LuxeStore</h4>
+                <p style="color: #94a3b8;">Premium retail experience for the modern shopper.</p>
+            </div>
+            <div>
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 LuxeStore. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+</html>

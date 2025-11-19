@@ -1,0 +1,16 @@
+{
+  "name": "retail-store-demo",
+  "version": "1.0.0",
+  "description": "A demo retail store website",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass assets/scss/main.scss assets/css/style.css",
+    "sass:watch": "sass --watch assets/scss/main.scss assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

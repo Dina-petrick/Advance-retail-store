@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - LuxeStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+ 
+     
+    <script fcm_service_path="/firebase-messaging-sw.js" src="https://sdk.resul.team/handlers/2f533ec9fd6348ae874877a03f155409.sdk" defer="defer"></script>
+
+</head>
+
+<body>
+  
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Luxe<span>Store</span>.</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="collections.html">Collections</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-actions">
+                <a href="cart.html" class="btn btn-secondary" style="padding: 0.5rem 1rem;">Cart (2)</a>
+                <a href="login.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Page -->
+    <div class="cart-page">
+        <h1>Shopping Cart</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                alt="Product"
+                                style="width: 60px; height: 60px; object-fit: cover; border-radius: 0.5rem;">
+                            <div>
+                                <div style="font-weight: 600;">Premium Watch</div>
+                                <div style="font-size: 0.9rem; color: #64748b;">Electronics</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$299.00</td>
+                    <td>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button
+                                style="padding: 0.25rem 0.5rem; border: 1px solid #e2e8f0; border-radius: 0.25rem;">-</button>
+                            <input type="text" value="1"
+                                style="width: 30px; text-align: center; border: 1px solid #e2e8f0; border-radius: 0.25rem;">
+                            <button
+                                style="padding: 0.25rem 0.5rem; border: 1px solid #e2e8f0; border-radius: 0.25rem;">+</button>
+                        </div>
+                    </td>
+                    <td>$299.00</td>
+                    <td>
+                        <button style="color: #ef4444;">&times;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                alt="Product"
+                                style="width: 60px; height: 60px; object-fit: cover; border-radius: 0.5rem;">
+                            <div>
+                                <div style="font-weight: 600;">Wireless Headphones</div>
+                                <div style="font-size: 0.9rem; color: #64748b;">Electronics</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$199.00</td>
+                    <td>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button
+                                style="padding: 0.25rem 0.5rem; border: 1px solid #e2e8f0; border-radius: 0.25rem;">-</button>
+                            <input type="text" value="1"
+                                style="width: 30px; text-align: center; border: 1px solid #e2e8f0; border-radius: 0.25rem;">
+                            <button
+                                style="padding: 0.25rem 0.5rem; border: 1px solid #e2e8f0; border-radius: 0.25rem;">+</button>
+                        </div>
+                    </td>
+                    <td>$199.00</td>
+                    <td>
+                        <button style="color: #ef4444;">&times;</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <div class="total">Total: <span>$498.00</span></div>
+            <p style="color: #64748b; margin-bottom: 1.5rem;">Taxes and shipping calculated at checkout</p>
+            <button class="btn btn-primary btn-block" style="max-width: 300px; margin-left: auto;">Proceed to
+                Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h4>LuxeStore</h4>
+                <p style="color: #94a3b8;">Premium retail experience for the modern shopper.</p>
+            </div>
+            <div>
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 LuxeStore. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+</html>

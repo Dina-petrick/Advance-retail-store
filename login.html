@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LuxeStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+ 
+    <script fcm_service_path="/firebase-messaging-sw.js" src="https://sdk.resul.team/handlers/2f533ec9fd6348ae874877a03f155409.sdk" defer="defer"></script>
+</head>
+
+<body>
+  
+    <div class="login-page">
+        <div class="login-card">
+            <h1>Welcome Back</h1>
+            <p>Please enter your details to sign in.</p>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+
+                <div style="margin-top: 1.5rem; font-size: 0.9rem; color: #64748b;">
+                    Don't have an account? <a href="#" style="color: #3b82f6; font-weight: 600;">Sign up</a>
+                </div>
+
+                <div style="margin-top: 1rem;">
+                    <a href="index.html" style="color: #64748b; font-size: 0.9rem; text-decoration: underline;">&larr;
+                        Back to Home</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+</html>
