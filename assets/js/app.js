@@ -5,17 +5,9 @@ function initApp() {
     console.log('App initialized :: ');
     console.log('ReWebSDK userLocation available:', !!window?.ReWebSDK?.userLocation);
 
-    // Safe delayed call to SDK method
-    setTimeout(() => {
-        if (window?.ReWebSDK?.userLocation) {
-            window.ReWebSDK.userLocation();
-        } else {
-            console.warn('ReWebSDK.userLocation not available yet');
-        }
-    }, 10000);
-
     setupLogin();
     setupAddToCart();
+    checkSDK();
 }
 
 // Login Logic
@@ -40,3 +32,10 @@ function setupAddToCart() {
         });
     });
 }
+
+const checkSDK = setInterval(() => {
+    if (window?.ReWebSDK?.userLocation) {
+        window.ReWebSDK.userLocation();
+        clearInterval(checkSDK);
+    }
+}, 1000);
