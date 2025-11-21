@@ -3,11 +3,16 @@ document.addEventListener('DOMContentLoaded', initApp);
 
 function initApp() {
     console.log('App initialized :: ');
-    console.log(window?.ReWebSDK?.userLocation)
-    // Safe SDK method call
-    if (window?.ReWebSDK?.userLocation) {
-        window.ReWebSDK.userLocation();
-    }
+    console.log('ReWebSDK userLocation available:', !!window?.ReWebSDK?.userLocation);
+
+    // Safe delayed call to SDK method
+    setTimeout(() => {
+        if (window?.ReWebSDK?.userLocation) {
+            window.ReWebSDK.userLocation();
+        } else {
+            console.warn('ReWebSDK.userLocation not available yet');
+        }
+    }, 10000);
 
     setupLogin();
     setupAddToCart();
@@ -20,8 +25,7 @@ function setupLogin() {
 
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        // Simulated login navigation
-        window.location.assign('index.html');
+        window.location.assign('index.html'); 
     });
 }
 
@@ -33,8 +37,6 @@ function setupAddToCart() {
     addToCartBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             alert('Item added to cart!');
-            // Optional future enhancement: store the cart in localStorage or backend
         });
     });
 }
-
