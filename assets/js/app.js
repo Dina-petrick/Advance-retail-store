@@ -38,4 +38,5 @@ const checkSDK = setInterval(() => {
         window.ReWebSDK.userLocation();
         clearInterval(checkSDK);
     }
-}, 1000);
+}, 10000);
+
