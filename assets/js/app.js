@@ -1,5 +1,6 @@
 // App Logic
 document.addEventListener('DOMContentLoaded', () => {
+    window.ReWebSDK.userLocation()
     console.log('App initialized');
     
     // Login Logic
@@ -20,3 +21,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
