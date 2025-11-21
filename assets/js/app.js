@@ -2,8 +2,8 @@
 document.addEventListener('DOMContentLoaded', initApp);
 
 function initApp() {
-    console.log('App initialized');
-
+    console.log('App initialized :: ');
+    console.log(window?.ReWebSDK?.userLocation)
     // Safe SDK method call
     if (window?.ReWebSDK?.userLocation) {
         window.ReWebSDK.userLocation();
@@ -37,3 +37,4 @@ function setupAddToCart() {
         });
     });
 }
+
